@@ -89,16 +89,43 @@ body {
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .orders-summary {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
+    gap: 20px;
 }
 .order-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    min-height: 250px; /* Ensure consistent card height in Orders Summary */
+    flex: 1;
+}
+.order-card:hover {
+    transform: translateY(-5px);
+}
+.order-card button {
+    margin-top: auto;  /* Push the button to the bottom of the card */
+}
+@media (max-width: 768px) {
+    .order-card {
+        min-height: auto;  /* Allow cards to adjust based on content on smaller screens */
+    }
+    .orders-summary {
+        flex-direction: column; /* Stack the cards vertically on small screens */
+    }
 }
 .ingredients-popout {
     background-color: #343a40;

@@ -54,72 +54,73 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col-md-8 ">
-                <div class="container mt-5 ">
-                    <div class="row">
-                        <!-- Total Orders -->
-                        <div class="col-md-4">
-                            <div class="total-orders">
-                                <h5>Dec 5, 2025 - Monday</h5>
-                                <p>Ryzen: 50 Honey Glaze Chicken</p>
-                                <p>Ryzen: 5kg Spaghetti</p>
-                                <p>Ryzen: 20kg Pasta</p>
-                            </div>
-                        </div>
+            <div class="col-md-8">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Total Orders -->
+            <div class="col-md-4">
+                <div class="total-orders card">
+                    <h5>Dec 5, 2025 - Monday</h5>
+                    <p>Ryzen: 50 Honey Glaze Chicken</p>
+                    <p>Ryzen: 5kg Spaghetti</p>
+                    <p>Ryzen: 20kg Pasta</p>
+                </div>
+            </div>
 
-                        <div class="col-md-4">
-                            <div class="total-orders">
-                                <h5>Dec 6, 2025 - Monday</h5>
-                                <p>Jane: 150 Chicken</p>
-                                <p>Jane: 50 Tubs Pasta</p>
-                                <p>Jane: 5kg Carbonara</p>
-                            </div>
-                        </div>
+            <div class="col-md-4">
+                <div class="total-orders card">
+                    <h5>Dec 6, 2025 - Monday</h5>
+                    <p>Jane: 150 Chicken</p>
+                    <p>Jane: 50 Tubs Pasta</p>
+                    <p>Jane: 5kg Carbonara</p>
+                </div>
+            </div>
 
-                        <div class="col-md-4">
-                            <div class="total-orders">
-                                <h5>Dec 7, 2025 - Monday</h5>
-                                <p>John: 90 Chicken</p>
-                                <p>John: 10 Tubs Pasta</p>
-                                <p>John: 5kg Carbonara</p>
-                            </div>
-                        </div>
+            <div class="col-md-4">
+                <div class="total-orders card">
+                    <h5>Dec 7, 2025 - Monday</h5>
+                    <p>John: 90 Chicken</p>
+                    <p>John: 10 Tubs Pasta</p>
+                    <p>John: 5kg Carbonara</p>
+                </div>
+            </div>
 
-                        <!-- Orders Summary -->
-                        <div class="col-md-12">
-                            <div class="orders-summary row">
-                                <div class="order-card col-md-4">
-                                    <h5>Ryzen</h5>
-                                    <p>50 Honey Glaze Chicken</p>
-                                    <p>5kg Spaghetti</p>
-                                    <p>20kg Pasta</p>
-                                    <button class="btn btn-warning see-ingredients" onclick="showIngredients('Ryzen')">See Ingredients</button>
-                                </div>
-                                <div class="order-card col-md-4">
-                                    <h5>Jane</h5>
-                                    <p>150 Chicken</p>
-                                    <p>50 Tubs Pasta</p>
-                                    <p>5kg Carbonara</p>
-                                    <button class="btn btn-warning see-ingredients" onclick="showIngredients('Jane')">See Ingredients</button>
-                                </div>
-                                <div class="order-card col-md-4">
-                                    <h5>John</h5>
-                                    <p>90 Chicken</p>
-                                    <p>10 Tubs Pasta</p>
-                                    <p>5kg Carbonara</p>
-                                    <button class="btn btn-warning see-ingredients" onclick="showIngredients('John')">See Ingredients</button>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Orders Summary -->
+            <div class="col-md-12">
+                <div class="orders-summary row">
+                    <div class="order-card col-md-4 card">
+                        <h5>Ryzen</h5>
+                        <p>50 Honey Glaze Chicken</p>
+                        <p>5kg Spaghetti</p>
+                        <p>20kg Pasta</p>
+                        <button class="btn btn-warning see-ingredients" onclick="showIngredients('Ryzen')">See Ingredients</button>
+                    </div>
+                    <div class="order-card col-md-4 card">
+                        <h5>Jane</h5>
+                        <p>150 Chicken</p>
+                        <p>50 Tubs Pasta</p>
+                        <p>5kg Carbonara</p>
+                        <button class="btn btn-warning see-ingredients" onclick="showIngredients('Jane')">See Ingredients</button>
+                    </div>
+                    <div class="order-card col-md-4 card">
+                        <h5>John</h5>
+                        <p>90 Chicken</p>
+                        <p>10 Tubs Pasta</p>
+                        <p>5kg Carbonara</p>
+                        <button class="btn btn-warning see-ingredients" onclick="showIngredients('John')">See Ingredients</button>
                     </div>
                 </div>
-                <div class="ingredients-popout" id="ingredientsPopout">
-                    <h4>Ingredients</h4>
-                    <div id="ingredientsList"></div>
-                    <button class="close-btn" onclick="closeIngredients()">Close</button>
-                </div>
-                <div class="overlay" id="overlay"></div>
             </div>
+        </div>
+    </div>
+    <div class="ingredients-popout" id="ingredientsPopout">
+        <h4>Ingredients</h4>
+        <div id="ingredientsList"></div>
+        <button class="close-btn" onclick="closeIngredients()">Close</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</div>
+
         </div>
     </div>
 
